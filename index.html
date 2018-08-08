@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<title>ElectronicosLM</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.w3-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Montserrat", sans-serif;}
+</style>
+<body class="w3-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top" style="z-index:3;width:250px" id="mySidebar">
+ <div class="w3-container w3-display-container w3-padding-16">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+  <a href="file:///C:/Users/matia/Desktop/Web/index.html#" style="text-decoration:none">
+          <h3 class="w3-wide"><b>ElectronicosLM</b></h3>
+     </a>
+  </div>
+  <div class="w3-padding-64 w3-large w3-text-grey" style="font-weight:bold">
+    <a href="#" class="w3-bar-item w3-button">Consolas</a>
+   <div>
+    <a onclick="myAccFunc2()" href="javascript:void(1)" class="w3-button w3-block w3-white w3-left-align" id="Celulares">
+    Celulares <i class="fa fa-caret-down"></i>
+    </a> 
+    <div id="demoAcc2" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button">Apple</a>
+      <a href="#" class="w3-bar-item w3-button">Samsung</a>
+      <a href="#" class="w3-bar-item w3-button">Huawei</a>
+    	<a href="#" class="w3-bar-item w3-button">Motorola</a>
+    	<a href="#" class="w3-bar-item w3-button">LG</a>
+    </div>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="Componentes">
+      Componentes de PC <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+     <a href="PlacasDeVideo/index.html" style="text-decoration:none">
+        Placas de video
+     </a>
+     
+     <!--Pegar la etiqueta de placas de video-->
+
+      
+      <a href="Procesadores/index.html" style="text-decoration:none">
+        Procesadores
+     </a>
+      <a href="#" class="w3-bar-item w3-button">Memorias</a>
+      <a href="#" class="w3-bar-item w3-button">Motherboards</a>
+    	<a href="#" class="w3-bar-item w3-button">Gabinetes</a>
+    	<a href="#" class="w3-bar-item w3-button">Perifericos</a>
+	<a href="#" class="w3-bar-item w3-button">Otros</a>
+    </div>
+    <a href="#" class="w3-bar-item w3-button">Electrodomesticos</a>
+          <a href="Televisores/index.html" style="text-decoration:none">
+        Televisores
+     </a>
+  </div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Contacto</a> 
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-black w3-xlarge">
+  <div class="w3-bar-item w3-padding-24 w3-wide">ElectronicosLM</div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge">
+    <p class="w3-left"></p>
+    <p class="w3-right">
+      <i class="fa fa-shopping-cart w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container">
+    <img src="Pcxd.png" alt="Jeans" style="width:100%">
+    <div class="w3-display-topleft w3-text-white" style="padding:40px 80px">
+      <h1 class="w3-jumbo w3-hide-small">Armá la mejor PC</h1>
+      <h1 class="w3-hide-large w3-hide-medium">Con los mejores componentes!</h1>
+      <h1 class="w3-hide-small">ElectronicosLM</h1>
+     
+  </div>
+
+ <!--
+  <div class="w3-container w3-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  
+  
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="Placadevideo.jpg" style="width:100%">
+        <p>Asus Nvidia GeForce GTX 1080 8gb<br><b>$ PRECIO</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="Placa2ahre.jpg" style="width:100%">
+        <p>Nvidia GeForce GTX 1050ti 4gb<br><b>$ PRECIO</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="1070ti.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">NUEVO</span>
+          <div class="w3-display-middle w3-display-hover">
+           
+          </div>
+        </div>
+        <p>Nvidia GEFORCE GTX 1070 Ti<br><b>$PRECIO</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="1030.png" style="width:100%">
+        <p>Gigabyte GeForce GTX 1030 OC 2G<br><b>$ PRECIO</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="s-l1000.jpg" style="width:100%">
+        <p>ASUS ROG GeForce GTX 1070 Strix Gaming 8GB OC<br><b>$ PRECIO</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="950.png" style="width:100%">
+          <span class="w3-tag w3-display-topleft">OFERTA</span>
+          <div class="w3-display-middle w3-display-hover">
+          
+          </div>
+        </div>
+        <p>GeForce GTX 950 GAMING 2G<br><b class="w3-text-red">$ PRECIO</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="1060.png" style="width:100%">
+        <p>NVIDIA GeForce GTX 1060<br><b>$ PRECIO</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="750.jpg" style="width:100%">
+        <p>ASUS GeForce GTX 750 Ti OC<br><b>$ PRECIO</b></p>
+      </div>
+    </div>
+  </div>
+    -->
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Ofertas</h1>
+    <p>Ingrese su e-mail para estar al tanto de proximas ofertas</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Ingrese su e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contacto</h4>
+        <p>Preguntas? Consultanos!.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Nombre" name="Nombre" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="DNI" name="DNI" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Mensaje" name="Mensaje" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Enviar</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>Metodos de Pago</h4>
+     	  <p><a href="#">MercadoPago</a></p>
+     	    
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Tienda</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> ElectronicosLM</p>
+        <p><i class="fa fa-fw fa-phone"></i> +54 1134348600</p>
+        <p><i class="fa fa-fw fa-envelope"></i> electronicoslminfo@gmail.com</p>
+        <h4>Aceptamos</h4>
+        
+        <p><i class="fa fa-fw fa-credit-card"></i> MercadoPago </p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large">
+        	<a target="_blank" href="https://www.facebook.com/ElectronicosLm-2156243347979224/?modal=admin_todo_tour" style="text-decoration:none">Facebook</a>
+        </i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large">
+        	<a target="_blank" href="https://www.instagram.com/electronicoslm" style="text-decoration:none">Instagram</a>
+        </i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24"> We use cookies to provide maps & see how people use our site via Google Analytics. You can find out more about what this means & how to turn off cookies in your browser by visiting aboutcookies.org</div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">CONTACTO</h2>
+      <p>Ingrese su e-mail y nos pondremos al contacto con usted.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+    var x = document.getElementById("demoAcc");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
